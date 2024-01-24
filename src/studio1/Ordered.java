@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ordered {
 
 	/**
-	 * @param args
+	 boolean isOrdered = true;
 	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -15,7 +15,8 @@ public class Ordered {
 		int y = in.nextInt();
 		System.out.println("Value for z?");
 		int z = in.nextInt();
-
+		boolean isOrdered= x<y && y<z || x>y && y>z;
+		System.out.println(isOrdered);
 	}
 
 }
